@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Reference images (not needed for production)
+IMG_*.heic
+IMG_*.png
+
+# Netlify config (not needed for GitHub Pages)
+netlify.toml

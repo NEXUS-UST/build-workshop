@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Website | NEXUS Workshop</title>
+    <meta name="description" content="Stop being invisible online. Build your personal website in 20 minutes with AI. A NEXUS workshop at University of St. Thomas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow"></div>
+    
+    <!-- Progress indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="https://ustnexus.club" class="nav-brand" target="_blank">
+                <img src="nexus-logo.jpg" alt="NEXUS" class="nav-logo-img">
+                <span>NEXUS</span>
+            </a>
+            <div class="nav-links">
+                <a href="#problem">Why</a>
+                <a href="#stack">How It Works</a>
+                <a href="#evolution">Then vs Now</a>
+                <a href="#tools">Tools</a>
+                <a href="#build">Build</a>
+                <a href="#resources">Resources</a>
+            </div>
+            <button class="nav-mobile-toggle" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#problem">Why</a>
+            <a href="#stack">How It Works</a>
+            <a href="#evolution">Then vs Now</a>
+            <a href="#tools">Tools</a>
+            <a href="#build">Build</a>
+            <a href="#resources">Resources</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                NEXUS Workshop — Live Now
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Your corner of</span>
+                <span class="title-line title-gradient">the internet</span>
+                <span class="title-line">is waiting.</span>
+            </h1>
+            <p class="hero-lead">
+                In 2025, not having a personal website is like not having a phone number in 1995.
+            </p>
+            <div class="hero-cta">
+                <a href="#problem" class="btn btn-primary">
+                    <span>Let's fix that</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </a>
+                <div class="hero-meta">
+                    <span>20 min build</span>
+                    <span class="meta-dot">·</span>
+                    <span>Zero code required</span>
+                    <span class="meta-dot">·</span>
+                    <span>100% free</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section class="section" id="problem">
+        <div class="container">
+            <div class="section-label">The Reality Check</div>
+            <h2 class="section-title-large">
+                You're invisible<br>to the people who matter.
+            </h2>
+            
+            <div class="comparison">
+                <div class="comparison-card comparison-bad">
+                    <div class="comparison-label">What they see now</div>
+                    <div class="comparison-content">
+                        <div class="fake-linkedin">
+                            <div class="linkedin-header">
+                                <div class="linkedin-avatar"></div>
+                                <div class="linkedin-info">
+                                    <div class="linkedin-name"></div>
+                                    <div class="linkedin-title"></div>
+                                </div>
+                            </div>
+                            <div class="linkedin-body">
+                                <div class="linkedin-line"></div>
+                                <div class="linkedin-line short"></div>
+                                <div class="linkedin-line"></div>
+                            </div>
+                        </div>
+                        <p class="comparison-text">A generic LinkedIn profile.<br>Just like everyone else's.</p>
+                    </div>
+                </div>
+                
+                <div class="comparison-vs">
+                    <span>vs</span>
+                </div>
+                
+                <div class="comparison-card comparison-good">
+                    <div class="comparison-label">What they could see</div>
+                    <div class="comparison-content">
+                        <div class="fake-website">
+                            <div class="website-bar">
+                                <div class="website-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="website-url">yourname.com</div>
+                            </div>
+                            <div class="website-body">
+                                <div class="website-hero-mini"></div>
+                                <div class="website-grid">
+                                    <div class="website-card"></div>
+                                    <div class="website-card"></div>
+                                    <div class="website-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="comparison-text">Your story. Your work. Your way.<br>Memorable. Professional. <em>Yours.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You're Missing -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-label">The Opportunity</div>
+            <h2 class="section-title-large">
+                A website isn't vanity.<br>It's <span class="highlight">leverage</span>.
+            </h2>
+            
+            <div class="bento-grid">
+                <div class="bento-card bento-large">
+                    <div class="bento-icon">💼</div>
+                    <h3>Land the job</h3>
+                    <p>Recruiters Google you. What do they find? Control the narrative with a portfolio that shows, not tells.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon">💰</div>
+                    <h3>Get paid</h3>
+                    <p>Freelance, consult, sell. Your website is a 24/7 sales rep.</p>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-icon">🎯</div>
+                    <h3>Build authority</h3>
+                    <p>Share what you know. Become the go-to person in your field.</p>
+                </div>
+                <div class="bento-card bento-wide">
+                    <div class="bento-icon">🚀</div>
+                    <h3>Own your platform</h3>
+                    <p>Social media algorithms change. Your website is forever yours. No gatekeepers. No character limits. No algorithm deciding who sees your work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Revolution -->
+    <section class="section" id="revolution">
+        <div class="container">
+            <div class="section-label">The Paradigm Shift</div>
+            <h2 class="section-title-large">
+                Everything changed<br>in the last 18 months.
+            </h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>Learn to code</h3>
+                        <p>6 months of tutorials, bootcamps, and frustration</p>
+                        <div class="timeline-bar" style="--width: 100%"></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>Use templates</h3>
+                        <p>2 weeks of customization and compromise</p>
+                        <div class="timeline-bar" style="--width: 40%"></div>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-now">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3>Describe it</h3>
+                        <p>20 minutes. Tell AI what you want. Done.</p>
+                        <div class="timeline-bar" style="--width: 8%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="revolution-quote">
+                <blockquote>
+                    "The best time to build a website was 10 years ago.<br>
+                    The second best time is <span class="highlight">right now</span>."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section-dark" id="how">
+        <div class="container">
+            <div class="section-label">Under the Hood</div>
+            <h2 class="section-title-large">
+                Websites are just<br>organized text files.
+            </h2>
+            
+            <div class="code-demo">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="code-filename">index.html</span>
+                    </div>
+                    <pre class="code-content"><code><span class="code-tag">&lt;html&gt;</span>
+  <span class="code-tag">&lt;head&gt;</span>
+    <span class="code-tag">&lt;title&gt;</span><span class="code-text">Your Name</span><span class="code-tag">&lt;/title&gt;</span>
+  <span class="code-tag">&lt;/head&gt;</span>
+  <span class="code-tag">&lt;body&gt;</span>
+    <span class="code-tag">&lt;h1&gt;</span><span class="code-text">Hello, World!</span><span class="code-tag">&lt;/h1&gt;</span>
+  <span class="code-tag">&lt;/body&gt;</span>
+<span class="code-tag">&lt;/html&gt;</span></code></pre>
+                </div>
+                <div class="code-explanation">
+                    <div class="explanation-item">
+                        <div class="explanation-icon">📁</div>
+                        <div>
+                            <h4>Folders</h4>
+                            <p>Organize your stuff</p>
+                        </div>
+                    </div>
+                    <div class="explanation-item">
+                        <div class="explanation-icon">📄</div>
+                        <div>
+                            <h4>Files</h4>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="explanation-item">
+                        <div class="explanation-icon">✨</div>
+                        <div>
+                            <h4>That's it</h4>
+                            <p>Seriously. That's all it is.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Dev Stack -->
+    <section class="section" id="stack">
+        <div class="container">
+            <div class="section-label">The Building Blocks</div>
+            <h2 class="section-title-large">
+                What you need to<br>build a website.
+            </h2>
+            
+            <div class="stack-grid">
+                <!-- IDE -->
+                <div class="stack-card" data-animate="slide-up">
+                    <div class="stack-number">1</div>
+                    <div class="stack-icon-row">
+                        <a href="https://code.visualstudio.com/" target="_blank" class="stack-logo" title="VS Code">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-vscode">
+                                <path d="M17.583 2.248L12.2 6.943 7.818 3.17 2.5 5.39v13.22l5.318 2.22 4.382-3.773 5.383 4.695 3.917-1.86V4.108l-3.917-1.86zM7.5 15.31V8.69l4.5 3.31-4.5 3.31zm10 1.38l-4-3.49 4-3.49v6.98z"/>
+                            </svg>
+                        </a>
+                        <a href="https://cursor.sh/" target="_blank" class="stack-logo" title="Cursor">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-cursor">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3>IDE <span class="stack-subtitle">(Code Editor)</span></h3>
+                    <p class="stack-analogy">"Your workshop where you write code"</p>
+                    <p class="stack-desc">An <strong>Integrated Development Environment</strong> is the app where you write, edit, and test your code. Think of it like Microsoft Word, but for code.</p>
+                    <div class="stack-examples">
+                        <a href="https://code.visualstudio.com/" target="_blank" class="stack-example primary">VS Code</a>
+                        <a href="https://cursor.sh/" target="_blank" class="stack-example primary">Cursor</a>
+                        <a href="https://codeium.com/windsurf" target="_blank" class="stack-example">Windsurf</a>
+                    </div>
+                    <div class="stack-learn">
+                        <a href="https://www.youtube.com/watch?v=B-s71n0dHUk" target="_blank" class="learn-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            Learn VS Code in 7 min
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Repository -->
+                <div class="stack-card" data-animate="slide-up" data-delay="100">
+                    <div class="stack-number">2</div>
+                    <div class="stack-icon-row">
+                        <a href="https://github.com/" target="_blank" class="stack-logo" title="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-github">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://gitlab.com/" target="_blank" class="stack-logo" title="GitLab">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-gitlab">
+                                <path d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 00-.867 0L16.418 9.45H7.582L4.918 1.263a.455.455 0 00-.867 0L1.386 9.45.044 13.587a.924.924 0 00.331 1.023L12 23.054l11.625-8.443a.92.92 0 00.33-1.024z"/>
+                            </svg>
+                        </a>
+                        <a href="https://bitbucket.org/" target="_blank" class="stack-logo" title="Bitbucket">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-bitbucket">
+                                <path d="M.778 1.211a.768.768 0 00-.768.892l3.263 19.81c.084.5.515.868 1.022.873H19.95a.772.772 0 00.77-.646l3.27-20.03a.768.768 0 00-.768-.891zM14.52 15.53H9.522L8.17 8.466h7.561z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3>Repository <span class="stack-subtitle">(Code Storage)</span></h3>
+                    <p class="stack-analogy">"Your Google Drive for code"</p>
+                    <p class="stack-desc">A <strong>repository</strong> (or "repo") stores all your code files, tracks every change you make, and lets you collaborate with others. It's like a super-powered folder with version history.</p>
+                    <div class="stack-examples">
+                        <a href="https://github.com/" target="_blank" class="stack-example primary">GitHub</a>
+                        <a href="https://gitlab.com/" target="_blank" class="stack-example">GitLab</a>
+                        <a href="https://bitbucket.org/" target="_blank" class="stack-example">Bitbucket</a>
+                    </div>
+                    <div class="stack-learn">
+                        <a href="https://www.youtube.com/watch?v=tRZGeaHPoaw" target="_blank" class="learn-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            Git & GitHub for Beginners
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hosting -->
+                <div class="stack-card" data-animate="slide-up" data-delay="200">
+                    <div class="stack-number">3</div>
+                    <div class="stack-icon-row">
+                        <a href="https://vercel.com/" target="_blank" class="stack-logo" title="Vercel">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-vercel">
+                                <path d="M24 22.525H0l12-21.05 12 21.05z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.netlify.com/" target="_blank" class="stack-logo" title="Netlify">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-netlify">
+                                <path d="M16.934 8.519a1.044 1.044 0 01.303.23l2.349-1.045-2.192-2.171-.491 2.954zM12.06 6.546a1.305 1.305 0 01.209.574l3.497 1.482a1.044 1.044 0 01.366-.325l.515-3.088-3.94-1.207-.647 2.564zM14.293 11.64l-3.576-1.521a1.164 1.164 0 01-.678.449l-.107 2.689 3.648 2.036.713-3.653zM9.5 8.988l.063-.015c.2-.046.39-.133.556-.256l-2.134-2.09-.266 2.988 1.781-.627zM7.752 9.944l.094-.033 1.828-.643-.063.015a1.167 1.167 0 01-.554-.298L7.752 9.944zM10.108 18.591l6.924-3.858-.713 3.653-6.211 3.462v-3.257zM9.5 15.576l-2.79-1.554-.154 1.728 2.944 1.642v-1.816zM6.396 9.647l.266-2.988-3.94-1.207-.647 2.564 4.321 1.631zM6.396 9.647l-.266 2.988 3.94 1.207.647-2.564-4.321-1.631zM2.075 8.516l-.647 2.564 3.94 1.207.266-2.988-3.559-1.783z"/>
+                            </svg>
+                        </a>
+                        <a href="https://pages.github.com/" target="_blank" class="stack-logo" title="GitHub Pages">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-ghpages">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.cloudflare.com/pages/" target="_blank" class="stack-logo" title="Cloudflare Pages">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-cloudflare">
+                                <path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 01-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9043l.499-1.2891c.0215-.0561.0283-.1191.0147-.1826-.5625-2.5752-2.8594-4.4912-5.6182-4.4912-2.5186 0-4.6582 1.6318-5.4219 3.8994-.4629-.3457-1.0557-.5273-1.6836-.4629-1.1182.1191-2.0166 1.0205-2.1289 2.1416-.0283.2813-.0068.5557.0557.8145C1.5322 13.0596 0 14.6572 0 16.6318c0 .1826.0146.3613.0361.5381.0147.1133.1094.1973.2246.1973h15.8096c.0986 0 .1846-.0625.2178-.1562l.2207-.6663z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3>Hosting <span class="stack-subtitle">(Server)</span></h3>
+                    <p class="stack-analogy">"A computer that's always on, serving your site"</p>
+                    <p class="stack-desc"><strong>Hosting</strong> is a computer (server) connected to the internet 24/7 that stores your website files and delivers them to anyone who visits your URL.</p>
+                    <div class="stack-examples">
+                        <a href="https://vercel.com/" target="_blank" class="stack-example primary">Vercel</a>
+                        <a href="https://www.netlify.com/" target="_blank" class="stack-example primary">Netlify</a>
+                        <a href="https://pages.github.com/" target="_blank" class="stack-example">GitHub Pages</a>
+                        <a href="https://www.cloudflare.com/pages/" target="_blank" class="stack-example">Cloudflare</a>
+                    </div>
+                    <div class="stack-learn">
+                        <a href="https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/" target="_blank" class="learn-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h5v7h7v9H6z"/></svg>
+                            Netlify Deployment Guide
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Domain -->
+                <div class="stack-card" data-animate="slide-up" data-delay="300">
+                    <div class="stack-number">4</div>
+                    <div class="stack-icon-row">
+                        <a href="https://domains.squarespace.com/" target="_blank" class="stack-logo" title="Squarespace Domains">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-squarespace">
+                                <path d="M22.655 8.719c-1.802-1.801-4.726-1.801-6.528 0l-6.127 6.127c-1.802 1.802-1.802 4.726 0 6.528 1.801 1.801 4.726 1.801 6.527 0l6.128-6.127c1.801-1.802 1.801-4.726 0-6.528zm-1.455 5.073l-6.127 6.127c-1.236 1.236-3.243 1.236-4.479 0-1.236-1.236-1.236-3.243 0-4.479l6.127-6.127c1.236-1.236 3.243-1.236 4.479 0 1.236 1.236 1.236 3.243 0 4.479z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.godaddy.com/" target="_blank" class="stack-logo" title="GoDaddy">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-godaddy">
+                                <path d="M20.16 7.53c-.12-.12-.24-.24-.36-.24a.71.71 0 00-.48.12c-.12.12-.24.24-.24.48 0 .12.12.36.24.48.12.12.36.24.48.24.24 0 .36-.12.48-.24.12-.12.24-.36.24-.48 0-.24-.12-.36-.36-.36zm-4.2 4.32c-.6 0-1.08.24-1.44.6-.36.36-.6.84-.6 1.44s.24 1.08.6 1.44c.36.36.84.6 1.44.6s1.08-.24 1.44-.6c.36-.36.6-.84.6-1.44s-.24-1.08-.6-1.44c-.36-.36-.84-.6-1.44-.6z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.namecheap.com/" target="_blank" class="stack-logo" title="Namecheap">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="logo-namecheap">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3>Domain <span class="stack-subtitle">(Your Address)</span></h3>
+                    <p class="stack-analogy">"Your website's street address"</p>
+                    <p class="stack-desc">A <strong>domain name</strong> (like yourname.com) is the human-readable address people type to visit your site. Without it, they'd have to remember a string of numbers (IP address).</p>
+                    <div class="stack-examples">
+                        <a href="https://domains.squarespace.com/" target="_blank" class="stack-example primary">Squarespace</a>
+                        <a href="https://www.godaddy.com/" target="_blank" class="stack-example primary">GoDaddy</a>
+                        <a href="https://www.namecheap.com/" target="_blank" class="stack-example">Namecheap</a>
+                        <a href="https://www.cloudflare.com/products/registrar/" target="_blank" class="stack-example">Cloudflare</a>
+                    </div>
+                    <div class="stack-learn">
+                        <a href="https://www.youtube.com/watch?v=Y4cRx19nhJk" target="_blank" class="learn-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            How Domains Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-table-wrapper" data-animate="fade-in">
+                <h3>Quick Comparison</h3>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>What It Does</th>
+                                <th>Free Options</th>
+                                <th>Paid Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>IDE</strong></td>
+                                <td>Write & edit code</td>
+                                <td><a href="https://code.visualstudio.com/" target="_blank">VS Code</a></td>
+                                <td><a href="https://cursor.sh/" target="_blank">Cursor</a> ($20/mo)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repository</strong></td>
+                                <td>Store & version code</td>
+                                <td><a href="https://github.com/" target="_blank">GitHub</a> (unlimited public)</td>
+                                <td><a href="https://github.com/pricing" target="_blank">GitHub Pro</a> ($4/mo)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hosting</strong></td>
+                                <td>Serve your website</td>
+                                <td><a href="https://vercel.com/" target="_blank">Vercel</a>, <a href="https://www.netlify.com/" target="_blank">Netlify</a></td>
+                                <td>Vercel Pro ($20/mo)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Domain</strong></td>
+                                <td>yourname.com address</td>
+                                <td>*.vercel.app, *.netlify.app</td>
+                                <td><a href="https://domains.squarespace.com/" target="_blank">~$12-20/year</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="stack-flow" data-animate="fade-in">
+                <div class="flow-item">
+                    <span class="flow-label">Write code in</span>
+                    <span class="flow-value">IDE</span>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item">
+                    <span class="flow-label">Save it to</span>
+                    <span class="flow-value">Repository</span>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item">
+                    <span class="flow-label">Deploy to</span>
+                    <span class="flow-value">Hosting</span>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-item">
+                    <span class="flow-label">Access via</span>
+                    <span class="flow-value">Domain</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Old Way vs New Way -->
+    <section class="section section-dark" id="evolution">
+        <div class="container">
+            <div class="section-label">The Evolution</div>
+            <h2 class="section-title-large">
+                How we got here.
+            </h2>
+
+            <div class="evolution-timeline">
+                <div class="evo-era evo-past">
+                    <div class="evo-badge">The Old Way</div>
+                    <h3>2010-2022</h3>
+                    <div class="evo-content">
+                        <div class="evo-step">
+                            <span class="evo-num">1</span>
+                            <p>Learn HTML, CSS, JavaScript (3-6 months)</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">2</span>
+                            <p>Learn a framework like React or Vue (2-3 months)</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">3</span>
+                            <p>Set up development environment manually</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">4</span>
+                            <p>Write every line of code yourself</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">5</span>
+                            <p>Debug for hours when things break</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">6</span>
+                            <p>Configure hosting, domains, SSL manually</p>
+                        </div>
+                    </div>
+                    <div class="evo-time">⏱️ 6-12 months to launch</div>
+                </div>
+
+                <div class="evo-divider">
+                    <div class="evo-divider-line"></div>
+                    <div class="evo-divider-text">AI Revolution</div>
+                    <div class="evo-divider-line"></div>
+                </div>
+
+                <div class="evo-era evo-present">
+                    <div class="evo-badge evo-badge-new">The New Way</div>
+                    <h3>2023-Now</h3>
+                    <div class="evo-content">
+                        <div class="evo-step">
+                            <span class="evo-num">1</span>
+                            <p>Open an AI-powered IDE or builder</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">2</span>
+                            <p>Describe what you want in plain English</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">3</span>
+                            <p>AI writes the code for you</p>
+                        </div>
+                        <div class="evo-step">
+                            <span class="evo-num">4</span>
+                            <p>Click deploy</p>
+                        </div>
+                    </div>
+                    <div class="evo-time">⚡ 20 minutes to launch</div>
+                </div>
+            </div>
+
+            <div class="ide-comparison">
+                <h3>Desktop IDEs vs Web-Based Builders</h3>
+                <div class="ide-grid">
+                    <div class="ide-card">
+                        <div class="ide-type">Desktop IDEs</div>
+                        <p class="ide-desc">Install on your computer. More powerful, more control, steeper learning curve.</p>
+                        <div class="ide-list">
+                            <div class="ide-item">
+                                <span class="ide-name">VS Code</span>
+                                <span class="ide-note">Industry standard, free</span>
+                            </div>
+                            <div class="ide-item">
+                                <span class="ide-name">Cursor</span>
+                                <span class="ide-note">VS Code + AI built-in</span>
+                            </div>
+                            <div class="ide-item">
+                                <span class="ide-name">Windsurf</span>
+                                <span class="ide-note">AI-first editor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ide-card ide-card-highlight">
+                        <div class="ide-type">Web-Based Builders</div>
+                        <p class="ide-desc">Run in your browser. No install needed. Perfect for beginners.</p>
+                        <div class="ide-list">
+                            <div class="ide-item">
+                                <span class="ide-name">Lovable</span>
+                                <span class="ide-note">Describe → Deploy</span>
+                            </div>
+                            <div class="ide-item">
+                                <span class="ide-name">Bolt</span>
+                                <span class="ide-note">Fast AI generation</span>
+                            </div>
+                            <div class="ide-item">
+                                <span class="ide-name">Replit</span>
+                                <span class="ide-note">Code in browser</span>
+                            </div>
+                        </div>
+                        <div class="ide-recommend">👈 Start here today</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="section" id="tools">
+        <div class="container">
+            <div class="section-label">Your Arsenal</div>
+            <h2 class="section-title-large">
+                Pick your weapon.
+            </h2>
+            
+            <div class="tools-grid">
+                <div class="tool-card tool-featured">
+                    <div class="tool-badge">Today's Pick</div>
+                    <div class="tool-logo">
+                        <span class="tool-logo-text">♥</span>
+                    </div>
+                    <h3>Lovable</h3>
+                    <p>Describe your site in plain English. Watch it appear. Deploy in one click.</p>
+                    <ul class="tool-features">
+                        <li>Free tier available</li>
+                        <li>No code required</li>
+                        <li>Beautiful defaults</li>
+                        <li>Instant deploy</li>
+                    </ul>
+                    <a href="https://lovable.dev/invite/IV91HV5" target="_blank" class="tool-link">
+                        lovable.dev
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </a>
+                    <div class="tool-video">
+                        <a href="https://www.youtube.com/watch?v=aSxEp9w6zTg" target="_blank" class="video-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            Watch Tutorial
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="tools-others">
+                    <h4 class="tools-others-title">Also great options</h4>
+                    <div class="tools-list">
+                        <a href="https://bolt.new/" target="_blank" class="tool-mini">
+                            <div class="tool-mini-icon">⚡</div>
+                            <div class="tool-mini-info">
+                                <span class="tool-mini-name">Bolt</span>
+                                <span class="tool-mini-desc">Fast AI builder</span>
+                            </div>
+                            <svg class="tool-mini-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                        <a href="https://cursor.sh/" target="_blank" class="tool-mini">
+                            <div class="tool-mini-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <div class="tool-mini-info">
+                                <span class="tool-mini-name">Cursor</span>
+                                <span class="tool-mini-desc">AI code editor (desktop)</span>
+                            </div>
+                            <svg class="tool-mini-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                        <a href="https://codeium.com/windsurf" target="_blank" class="tool-mini">
+                            <div class="tool-mini-icon">🏄</div>
+                            <div class="tool-mini-info">
+                                <span class="tool-mini-name">Windsurf</span>
+                                <span class="tool-mini-desc">AI-first IDE (desktop)</span>
+                            </div>
+                            <svg class="tool-mini-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                        <a href="https://replit.com/" target="_blank" class="tool-mini">
+                            <div class="tool-mini-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M2 1.5A1.5 1.5 0 013.5 0h7A1.5 1.5 0 0112 1.5V6H3.5A1.5 1.5 0 012 4.5v-3zM12 6h8.5A1.5 1.5 0 0122 7.5v9a1.5 1.5 0 01-1.5 1.5H12V6zM2 19.5A1.5 1.5 0 013.5 18H12v4.5a1.5 1.5 0 01-1.5 1.5h-7A1.5 1.5 0 012 22.5v-3z"/></svg>
+                            </div>
+                            <div class="tool-mini-info">
+                                <span class="tool-mini-name">Replit</span>
+                                <span class="tool-mini-desc">Code in browser</span>
+                            </div>
+                            <svg class="tool-mini-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                        <a href="https://v0.dev/" target="_blank" class="tool-mini">
+                            <div class="tool-mini-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 22.525H0l12-21.05 12 21.05z"/></svg>
+                            </div>
+                            <div class="tool-mini-info">
+                                <span class="tool-mini-name">v0 by Vercel</span>
+                                <span class="tool-mini-desc">AI UI generation</span>
+                            </div>
+                            <svg class="tool-mini-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                        <a href="https://webflow.com/" target="_blank" class="tool-mini">
+                            <div class="tool-mini-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.802 8.56s-1.946 6.103-2.105 6.607a.093.093 0 01-.18 0c-.063-.188-1.476-4.214-1.476-4.214a3.97 3.97 0 00-3.737-2.61c-1.226 0-2.322.548-3.057 1.412 0 0-2.053 2.704-2.2 2.9a.093.093 0 01-.163-.04c-.04-.22-.627-4.073-.627-4.073A3.97 3.97 0 00.32 5.252H0v13.496h3.63s2.053-6.407 2.158-6.74a.093.093 0 01.178 0c.063.188 1.476 4.214 1.476 4.214a3.97 3.97 0 003.737 2.61c1.226 0 2.322-.548 3.057-1.412 0 0 4.107-5.412 4.254-5.608a.093.093 0 01.163.04l1.027 6.896h3.32V8.252h-3.63c-.63 0-1.188.308-1.568.308z"/></svg>
+                            </div>
+                            <div class="tool-mini-info">
+                                <span class="tool-mini-name">Webflow</span>
+                                <span class="tool-mini-desc">Visual designer</span>
+                            </div>
+                            <svg class="tool-mini-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Comparison Table -->
+            <div class="comparison-table-wrapper tools-comparison" data-animate="fade-in">
+                <h3>AI Builder Comparison</h3>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tool</th>
+                                <th>Type</th>
+                                <th>Best For</th>
+                                <th>Free Tier</th>
+                                <th>Learning Curve</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row-highlight">
+                                <td><a href="https://lovable.dev/invite/IV91HV5" target="_blank"><strong>Lovable</strong></a></td>
+                                <td>Web-based</td>
+                                <td>Complete beginners</td>
+                                <td>✅ Yes</td>
+                                <td>⭐ Easiest</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://bolt.new/" target="_blank">Bolt</a></td>
+                                <td>Web-based</td>
+                                <td>Quick prototypes</td>
+                                <td>✅ Yes</td>
+                                <td>⭐ Easy</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://cursor.sh/" target="_blank">Cursor</a></td>
+                                <td>Desktop app</td>
+                                <td>Developers</td>
+                                <td>✅ Limited</td>
+                                <td>⭐⭐ Medium</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://codeium.com/windsurf" target="_blank">Windsurf</a></td>
+                                <td>Desktop app</td>
+                                <td>AI-first coding</td>
+                                <td>✅ Yes</td>
+                                <td>⭐⭐ Medium</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://replit.com/" target="_blank">Replit</a></td>
+                                <td>Web-based</td>
+                                <td>Learning to code</td>
+                                <td>✅ Yes</td>
+                                <td>⭐⭐ Medium</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Build -->
+    <section class="section section-dark" id="build">
+        <div class="container">
+            <div class="section-label">Let's Go</div>
+            <h2 class="section-title-large">
+                Three steps.<br>Twenty minutes.
+            </h2>
+            
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Create account</h3>
+                        <p>Head to <a href="https://lovable.dev/invite/IV91HV5" target="_blank">lovable.dev</a> and sign up. GitHub account recommended but not required.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Describe your site</h3>
+                        <p>Tell it what you want. "A minimal portfolio for a computer science student with dark mode and a projects section."</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Deploy</h3>
+                        <p>Click publish. Your site is live. Add a custom domain later if you want.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="build-cta">
+                <h3>Ready?</h3>
+                <p>Open your laptop. Let's build this together.</p>
+                <a href="https://lovable.dev/invite/IV91HV5" target="_blank" class="btn btn-primary btn-large">
+                    <span>Start Building</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="section" id="resources">
+        <div class="container">
+            <div class="section-label">Keep Going</div>
+            <h2 class="section-title-large">
+                Resources for later.
+            </h2>
+            
+            <div class="resources-grid-new">
+                <div class="resource-category">
+                    <div class="resource-icon">🎓</div>
+                    <h4>Learn to Code</h4>
+                    <p class="resource-desc">If you want to understand what's happening under the hood</p>
+                    <ul>
+                        <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> <span>— Free, comprehensive</span></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a> <span>— Official documentation</span></li>
+                        <li><a href="https://www.youtube.com/@WebDevSimplified" target="_blank">Web Dev Simplified</a> <span>— YouTube tutorials</span></li>
+                        <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> <span>— Interactive lessons</span></li>
+                    </ul>
+                    <div class="resource-video">
+                        <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc" target="_blank" class="video-link-small">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            HTML & CSS Full Course
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <div class="resource-icon">💾</div>
+                    <h4>Code Repository</h4>
+                    <p class="resource-desc">Where to store and version control your code</p>
+                    <ul>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a> <span>— Industry standard</span></li>
+                        <li><a href="https://gitlab.com/" target="_blank">GitLab</a> <span>— Great for teams</span></li>
+                        <li><a href="https://bitbucket.org/" target="_blank">Bitbucket</a> <span>— Atlassian ecosystem</span></li>
+                    </ul>
+                    <div class="resource-video">
+                        <a href="https://www.youtube.com/watch?v=tRZGeaHPoaw" target="_blank" class="video-link-small">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            Git & GitHub Tutorial
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <div class="resource-icon">🚀</div>
+                    <h4>Hosting</h4>
+                    <p class="resource-desc">Servers to make your site live on the internet</p>
+                    <ul>
+                        <li><a href="https://vercel.com/" target="_blank">Vercel</a> <span>— Best for React/Next.js</span></li>
+                        <li><a href="https://www.netlify.com/" target="_blank">Netlify</a> <span>— Great free tier</span></li>
+                        <li><a href="https://pages.github.com/" target="_blank">GitHub Pages</a> <span>— Free static hosting</span></li>
+                        <li><a href="https://www.cloudflare.com/pages/" target="_blank">Cloudflare Pages</a> <span>— Fast & free</span></li>
+                    </ul>
+                    <div class="resource-video">
+                        <a href="https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/" target="_blank" class="video-link-small">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/></svg>
+                            Netlify Deploy Guide
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <div class="resource-icon">🌐</div>
+                    <h4>Domain Names</h4>
+                    <p class="resource-desc">Get your yourname.com address</p>
+                    <ul>
+                        <li><a href="https://domains.squarespace.com/" target="_blank">Squarespace Domains</a> <span>— Simple & clean</span></li>
+                        <li><a href="https://www.godaddy.com/" target="_blank">GoDaddy</a> <span>— Largest registrar</span></li>
+                        <li><a href="https://www.namecheap.com/" target="_blank">Namecheap</a> <span>— Budget friendly</span></li>
+                        <li><a href="https://www.cloudflare.com/products/registrar/" target="_blank">Cloudflare</a> <span>— At-cost pricing</span></li>
+                        <li><a href="https://porkbun.com/" target="_blank">Porkbun</a> <span>— Cheap & fun</span></li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <div class="resource-icon">🛠️</div>
+                    <h4>AI Builders</h4>
+                    <p class="resource-desc">Build without coding (what we're using today)</p>
+                    <ul>
+                        <li><a href="https://lovable.dev/invite/IV91HV5" target="_blank">Lovable</a> <span>— Today's pick</span></li>
+                        <li><a href="https://bolt.new/" target="_blank">Bolt</a> <span>— Fast generation</span></li>
+                        <li><a href="https://replit.com/" target="_blank">Replit</a> <span>— Code in browser</span></li>
+                        <li><a href="https://v0.dev/" target="_blank">v0 by Vercel</a> <span>— UI generation</span></li>
+                    </ul>
+                    <div class="resource-video">
+                        <a href="https://www.youtube.com/watch?v=aSxEp9w6zTg" target="_blank" class="video-link-small">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            Lovable Tutorial
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <div class="resource-icon">💻</div>
+                    <h4>Desktop IDEs</h4>
+                    <p class="resource-desc">For when you're ready to level up</p>
+                    <ul>
+                        <li><a href="https://code.visualstudio.com/" target="_blank">VS Code</a> <span>— Industry standard</span></li>
+                        <li><a href="https://cursor.sh/" target="_blank">Cursor</a> <span>— VS Code + AI</span></li>
+                        <li><a href="https://codeium.com/windsurf" target="_blank">Windsurf</a> <span>— AI-first editor</span></li>
+                        <li><a href="https://github.com/cline/cline" target="_blank">Cline</a> <span>— VS Code extension</span></li>
+                    </ul>
+                    <div class="resource-video">
+                        <a href="https://www.youtube.com/watch?v=B-s71n0dHUk" target="_blank" class="video-link-small">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            VS Code in 7 min
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=ocMOZpuAMw4" target="_blank" class="video-link-small">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            Cursor Tutorial
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <div class="resource-icon">🎨</div>
+                    <h4>Design Inspiration</h4>
+                    <p class="resource-desc">See what great websites look like</p>
+                    <ul>
+                        <li><a href="https://dribbble.com/" target="_blank">Dribbble</a> <span>— Design community</span></li>
+                        <li><a href="https://www.awwwards.com/" target="_blank">Awwwards</a> <span>— Best of the web</span></li>
+                        <li><a href="https://www.behance.net/" target="_blank">Behance</a> <span>— Creative portfolios</span></li>
+                        <li><a href="https://www.siteinspire.com/" target="_blank">Site Inspire</a> <span>— Curated gallery</span></li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <div class="resource-icon">📚</div>
+                    <h4>No-Code Alternatives</h4>
+                    <p class="resource-desc">Drag-and-drop website builders</p>
+                    <ul>
+                        <li><a href="https://www.squarespace.com/" target="_blank">Squarespace</a> <span>— Beautiful templates</span></li>
+                        <li><a href="https://www.wix.com/" target="_blank">Wix</a> <span>— Beginner friendly</span></li>
+                        <li><a href="https://webflow.com/" target="_blank">Webflow</a> <span>— Designer's choice</span></li>
+                        <li><a href="https://wordpress.com/" target="_blank">WordPress</a> <span>— Most popular CMS</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="next-steps-box">
+                <h3>What's Next?</h3>
+                <div class="next-steps-grid">
+                    <div class="next-step">
+                        <div class="next-step-time">Today</div>
+                        <p>Build your first site with Lovable</p>
+                    </div>
+                    <div class="next-step-arrow">→</div>
+                    <div class="next-step">
+                        <div class="next-step-time">This Week</div>
+                        <p>Add your real content & customize</p>
+                    </div>
+                    <div class="next-step-arrow">→</div>
+                    <div class="next-step">
+                        <div class="next-step-time">This Month</div>
+                        <p>Get a custom domain (yourname.com)</p>
+                    </div>
+                    <div class="next-step-arrow">→</div>
+                    <div class="next-step">
+                        <div class="next-step-time">Later</div>
+                        <p>Learn to code if you want more control</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">◆</span>
+                    <span>NEXUS</span>
+                </div>
+                <p class="footer-tagline">Connecting Innovation, Technology, and Excellence</p>
+                <div class="footer-links">
+                    <a href="https://ustnexus.club" target="_blank">ustnexus.club</a>
+                    <span>·</span>
+                    <a href="mailto:nexus@everjust.org">nexus@everjust.org</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>University of St. Thomas · St. Paul, Minnesota</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -4,6 +4,168 @@
  */
 
 // ============================================
+// Workshop Countdown & Check-in System
+// ============================================
+(function() {
+    // Workshop time settings (Central Time - Dec 4, 2025)
+    const WORKSHOP_START = new Date('2025-12-04T12:00:00-06:00'); // Noon CT
+    const CHECKIN_START = new Date('2025-12-04T12:01:00-06:00');  // 12:01 PM CT
+    const CHECKIN_END = new Date('2025-12-04T12:30:00-06:00');    // 12:30 PM CT
+    
+    // Store check-ins in localStorage (will be sent via email)
+    const CHECKINS_KEY = 'nexus_workshop_checkins';
+    
+    const countdownContainer = document.getElementById('countdown-container');
+    const checkinContainer = document.getElementById('checkin-container');
+    const checkinForm = document.getElementById('checkin-form');
+    const checkinSuccess = document.getElementById('checkin-success');
+    
+    // Update countdown timer
+    function updateCountdown() {
+        const now = new Date();
+        const diff = WORKSHOP_START - now;
+        
+        if (diff <= 0) {
+            // Workshop has started, hide countdown
+            if (countdownContainer) {
+                countdownContainer.style.display = 'none';
+            }
+            return false;
+        }
+        
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        const hoursEl = document.getElementById('countdown-hours');
+        const minutesEl = document.getElementById('countdown-minutes');
+        const secondsEl = document.getElementById('countdown-seconds');
+        
+        if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+        if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+        if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
+        
+        return true;
+    }
+    
+    // Check if check-in window is active
+    function isCheckinActive() {
+        const now = new Date();
+        return now >= CHECKIN_START && now <= CHECKIN_END;
+    }
+    
+    // Update visibility based on time
+    function updateVisibility() {
+        const now = new Date();
+        
+        // Countdown: visible before workshop starts
+        if (countdownContainer) {
+            if (now < WORKSHOP_START) {
+                countdownContainer.style.display = 'block';
+            } else {
+                countdownContainer.style.display = 'none';
+            }
+        }
+        
+        // Check-in: visible only during 12:01-12:30 window
+        if (checkinContainer) {
+            if (isCheckinActive()) {
+                checkinContainer.style.display = 'block';
+            } else {
+                checkinContainer.style.display = 'none';
+            }
+        }
+    }
+    
+    // Get stored check-ins
+    function getCheckins() {
+        try {
+            return JSON.parse(localStorage.getItem(CHECKINS_KEY) || '[]');
+        } catch {
+            return [];
+        }
+    }
+    
+    // Save check-in
+    function saveCheckin(name, email) {
+        const checkins = getCheckins();
+        checkins.push({
+            name: name,
+            email: email,
+            timestamp: new Date().toISOString()
+        });
+        localStorage.setItem(CHECKINS_KEY, JSON.stringify(checkins));
+        return checkins;
+    }
+    
+    // Send check-ins via mailto (aggregated)
+    function sendCheckinsEmail() {
+        const checkins = getCheckins();
+        if (checkins.length === 0) return;
+        
+        const subject = encodeURIComponent('NEXUS Workshop Check-ins - Dec 4, 2025');
+        const body = encodeURIComponent(
+            'Workshop Check-ins:\n\n' +
+            checkins.map((c, i) => 
+                `${i + 1}. ${c.name} <${c.email}> - ${new Date(c.timestamp).toLocaleTimeString()}`
+            ).join('\n') +
+            '\n\nTotal: ' + checkins.length + ' attendees'
+        );
+        
+        // Open mailto link
+        window.open(`mailto:nexus@stthomas.edu?subject=${subject}&body=${body}`, '_blank');
+    }
+    
+    // Handle check-in form submission
+    if (checkinForm) {
+        checkinForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nameInput = document.getElementById('checkin-name');
+            const emailInput = document.getElementById('checkin-email');
+            
+            if (nameInput && emailInput) {
+                const name = nameInput.value.trim();
+                const email = emailInput.value.trim();
+                
+                if (name && email) {
+                    // Save check-in
+                    saveCheckin(name, email);
+                    
+                    // Show success message
+                    checkinForm.style.display = 'none';
+                    if (checkinSuccess) {
+                        checkinSuccess.style.display = 'flex';
+                    }
+                    
+                    // Send email with all check-ins after a short delay
+                    setTimeout(() => {
+                        sendCheckinsEmail();
+                    }, 1000);
+                }
+            }
+        });
+    }
+    
+    // Initialize
+    updateVisibility();
+    updateCountdown();
+    
+    // Update every second
+    setInterval(() => {
+        updateCountdown();
+        updateVisibility();
+    }, 1000);
+    
+    // Export for debugging
+    window.nexusWorkshop = {
+        getCheckins,
+        sendCheckinsEmail,
+        isCheckinActive
+    };
+})();
+
+// ============================================
 // Mobile Menu Toggle
 // ============================================
 const mobileToggle = document.querySelector('.nav-mobile-toggle');

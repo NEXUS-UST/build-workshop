@@ -651,6 +651,14 @@ body {
 .bento-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--purple);
+}
+
+.bento-icon svg {
+    width: 2rem;
+    height: 2rem;
+    stroke: var(--purple);
+    stroke-width: 1.5;
 }
 
 .bento-card h3 {
@@ -1958,6 +1966,14 @@ body {
 .resource-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--purple);
+}
+
+.resource-icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    stroke: var(--purple);
+    stroke-width: 1.5;
 }
 
 .resource-category h4 {

@@ -167,10 +167,10 @@ Hire someone → $$$ expensive
 
 ---
 
-## 🎨 Recommended Icon Libraries
+## 🎨 Icon & Component Libraries
 
-### Top Picks
-1. **Lucide** (lucide.dev) - Clean, consistent, MIT license
+### Icon Libraries (Lucide ✅ IMPLEMENTED)
+1. **Lucide** (lucide.dev) - ✅ NOW USING - Clean, consistent, MIT license
 2. **Phosphor Icons** (phosphoricons.com) - Flexible weights
 3. **Heroicons** (heroicons.com) - By Tailwind team
 4. **Tabler Icons** (tabler-icons.io) - 4000+ icons
@@ -179,6 +179,16 @@ Hire someone → $$$ expensive
 ### For Tech/Dev Context
 - **Simple Icons** (simpleicons.org) - Brand/logo icons
 - **Devicon** (devicon.dev) - Programming language icons
+
+### Recommended Component Libraries
+1. **shadcn/ui** (ui.shadcn.com) - Beautiful, accessible components
+2. **Radix UI** (radix-ui.com) - Unstyled, accessible primitives
+3. **Headless UI** (headlessui.com) - By Tailwind team
+4. **Chakra UI** (chakra-ui.com) - Simple, modular components
+5. **Mantine** (mantine.dev) - Full-featured React library
+6. **DaisyUI** (daisyui.com) - Tailwind CSS components
+7. **Aceternity UI** (ui.aceternity.com) - Modern animated components
+8. **Magic UI** (magicui.design) - Animated components
 
 ---
 
@@ -197,14 +207,28 @@ Hire someone → $$$ expensive
 
 ## 📝 Action Items
 
-1. [ ] Update hero to prominently say "Build Personal Website"
-2. [ ] Replace generic icons with Lucide icons
-3. [ ] Update email to nexus@stthomas.edu
-4. [ ] Add Tim Berners-Lee history mention
-5. [ ] Add static vs dynamic website types section
-6. [ ] Add cost comparison (before AI)
-7. [ ] Enable HTTPS when certificate ready
-8. [ ] Add "Your Turn" interactive section
+### ✅ Completed
+1. [x] Update hero to prominently say "Build Personal Website"
+2. [x] Replace generic icons with Lucide icons (bento cards + resources)
+3. [x] Update email to nexus@stthomas.edu
+4. [x] Create WORKSHOP_NOTES.md documenting all concepts
+5. [x] Deploy to GitHub Pages (build.ustnexus.club)
+6. [x] Configure DNS in GoDaddy
+
+### ⏳ Pending
+7. [ ] Enable HTTPS when certificate ready (check GitHub Pages settings)
+8. [ ] Add Tim Berners-Lee history mention (1990 first website)
+9. [ ] Add static vs dynamic website types section
+10. [ ] Add cost comparison (before AI era)
+11. [ ] Add "Your Turn" interactive section
+
+---
+
+## 🔗 Live URLs
+
+- **HTTP**: http://build.ustnexus.club ✅
+- **HTTPS**: https://build.ustnexus.club (pending certificate)
+- **GitHub Repo**: https://github.com/NEXUS-UST/build-workshop
 
 ---
 

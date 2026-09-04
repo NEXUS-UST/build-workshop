@@ -1,179 +1,100 @@
-# Build Your Personal Website - NEXUS Event
+# Build Your Personal Website
 
-A comprehensive, single-page presentation website for NEXUS's "Build Your Personal Website" workshop at the University of St. Thomas.
+A NEXUS workshop that teaches beginners to ship a personal website in about twenty minutes.
 
-## 🎯 Purpose
+**Status:** Live · GitHub Pages from `main` · first run 4 December 2025 · public
 
-This website serves dual purposes:
-1. **Live Presentation**: Used during the workshop to guide participants through building their first website
-2. **Post-Event Reference**: Serves as a permanent resource for attendees to revisit concepts and links
+|  |  |
+|---|---|
+| **What it is** | A single-page workshop site: the slides, the live demo script, and the reference students keep afterwards |
+| **Who it's for** | University of St. Thomas students with no coding background |
+| **Live at** | [build.ustnexus.club](https://build.ustnexus.club) |
+| **Stack** | HTML · CSS · vanilla JavaScript · Lucide icons · GitHub Pages |
+| **Status** | Live · HTTPS enforced · 8 commits · no build step, no dependencies |
 
-## 🎨 Design
+Most workshop decks stop working the moment the projector turns off. This one is a website, so it does
+both jobs: the presenter scrolls through it live, and every attendee still has the same URL a month
+later when they finally sit down to build. It is the room's slide deck and the room's homework page.
 
-The website follows NEXUS's brand guidelines:
-- **Color Scheme**: Dark theme with UST purple (#663399)
-- **Typography**: Inter for body text, JetBrains Mono for code
-- **Style**: Modern, tech-focused, clean and professional
+## What it covers
 
-## 📋 Content Sections
+Ten sections, in the order they are presented:
 
-### 1. Hero
-- Workshop overview
-- Key statistics (duration, prerequisites, possibilities)
-- Call-to-action
+- **The Reality Check** and **The Opportunity** — why a personal site beats a PDF résumé
+- **The Paradigm Shift** — what building a website used to cost in time or money, and what it costs now
+- **Under the Hood** — a site is folders, files, and text; static versus dynamic
+- **The Building Blocks** — the three ingredients: a domain, a repository, and the code
+- **The Evolution** and **Your Arsenal** — the tool landscape, from no-code builders to AI-assisted editors
+- **Let's Go** — the three-step live build: create an account, describe the site, connect a domain
+- **Get Inspired** — six starter templates, one featured
+- **Keep Going** — learning resources, free hosting, domain registrars, and design galleries
 
-### 2. Why Build a Personal Website?
-- Target audience considerations
-- Use cases (portfolio, blog, resume, monetization)
-- Benefits and opportunities
+The page also carries a countdown to the session start and a name-and-email check-in form that opens
+for the first thirty minutes. Both are time-gated in JavaScript; see [Known limitations](#known-limitations).
 
-### 3. Recipe to Make a Website
-- Understanding website structure (folders, files, code)
-- Types of websites (static vs dynamic)
-- Complexity levels (beginner to advanced)
+## Why it exists, and who it's for
 
-### 4. Platforms to Build With
-- No-code/Low-code options (WIX, WordPress, Replit)
-- AI-assisted builders (Lovable, Bolt)
-- Code editors with AI (Cursor, Windsurf, Cline, Claude Code)
-- Cost breakdown
+Students who have never opened a code editor, run by a presenter who has. Nothing on the page assumes
+a terminal, a package manager, or a GitHub account — the demo path uses a browser-based builder and
+ends with a real domain. `WORKSHOP_NOTES.md` holds the original handwritten outline the site was built
+from, so anyone can re-run the session without the person who wrote it.
 
-### 5. Today's Agenda
-- Demo & Quick Build path
-- Build Your Own path
-- Step-by-step instructions
-- Before AI vs Now comparison
+## Quickstart
 
-### 6. Resources & Next Steps
-- Learning resources (FreeCodeCamp, W3Schools, MDN)
-- Tools & platforms (GitHub, Netlify, Vercel)
-- Design inspiration (Dribbble, Awwwards)
-- Domain & hosting options
-- Timeline for next steps
-
-## 🚀 Features
-
-- ✅ Fully responsive design (mobile, tablet, desktop)
-- ✅ Smooth scrolling navigation
-- ✅ Animated background particles
-- ✅ Intersection Observer for fade-in animations
-- ✅ Parallax effects
-- ✅ Active navigation state tracking
-- ✅ Keyboard navigation (ESC to scroll to top)
-- ✅ Accessibility-focused design
-- ✅ Performance optimized
-
-## 🛠️ Technical Stack
-
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with CSS Grid and Flexbox
-- **Vanilla JavaScript**: Progressive enhancement and interactivity
-- **No dependencies**: Pure HTML/CSS/JS for maximum performance
-
-## 📁 File Structure
-
-```
-Event-personal site/
-├── index.html          # Main HTML file
-├── style.css           # All styles
-├── script.js           # JavaScript functionality
-├── README.md           # This file
-├── IMG_7904.png        # Event planning notes
-├── IMG_7905.png        # Technical details
-├── IMG_7906.png        # Platform information
-└── IMG_7907.png        # Event outline
-```
-
-## 🌐 Local Development
-
-1. Open `index.html` directly in your browser, or
-2. Use a local server for better performance:
+The site is static. Open it directly, or serve it so relative paths and the fonts behave:
 
 ```bash
-# Python 3
-python -m http.server 8000
+git clone https://github.com/NEXUS-UST/build-workshop.git
+cd build-workshop
+python3 -m http.server 8000
+```
 
-# Node.js
+Then visit `http://localhost:8000`. Any static server works:
+
+```bash
 npx serve .
-
-# PHP
-php -S localhost:8000
 ```
 
-Then visit `http://localhost:8000`
+There is nothing to install and nothing to compile. Edit `index.html`, reload the browser.
 
-## 📝 Customization
+## How it's organised
 
-### Colors
-Edit CSS variables in `style.css`:
-```css
-:root {
-    --primary-purple: #663399;
-    --primary-purple-light: #7d4db5;
-    --primary-purple-dark: #552288;
-    /* ... */
-}
+```
+build-workshop/
+├── index.html          # The whole workshop — all ten sections, countdown, check-in form
+├── style.css           # Design system: dark theme, UST purple (#663399), Inter + JetBrains Mono
+├── script.js           # Countdown, check-in window, scroll animations, active-nav tracking
+├── nexus-logo.jpg      # Club mark used in the header
+├── WORKSHOP_NOTES.md   # Presenter notes: agenda, talking points, tool comparison table
+├── CNAME               # build.ustnexus.club — read by GitHub Pages
+└── .nojekyll           # Serve files as-is; skip Jekyll processing
 ```
 
-### Content
-All content is in `index.html` and can be easily modified by editing the HTML sections.
+One external runtime dependency: Lucide icons, loaded from `unpkg.com` at page load. Fonts come from
+Google Fonts. Everything else is committed here.
 
-### Animations
-Adjust animation timings and effects in `script.js` and `style.css`.
+## Deploying
 
-## 🎓 Workshop Flow
+GitHub Pages serves `main` from the repository root. Push to `main` and the change is live within a
+minute or two — there is no workflow file and no build step. The custom domain comes from `CNAME`;
+the Let's Encrypt certificate is provisioned by GitHub and HTTPS is enforced. If you change the
+domain, edit `CNAME` and update the DNS record, then re-check Pages settings — the certificate takes
+up to thirty minutes to reissue.
 
-1. **Introduction** (5 min)
-   - Navigate to Hero section
-   - Explain workshop goals
+## Known limitations
 
-2. **Why Build?** (10 min)
-   - Scroll to Why section
-   - Discuss use cases and benefits
+- **The countdown and check-in window are hardcoded** to 4 December 2025 in `script.js`. Both are past,
+  so neither renders now. Re-running the workshop means editing those three constants.
+- **Check-ins are stored in `localStorage` only.** They never leave the attendee's browser, so the
+  presenter's device is the only place a roster exists. There is no backend.
+- **`lucide@latest` is unpinned.** A breaking release upstream would change the icons without a commit here.
+- **`WORKSHOP_NOTES.md` still lists open items** — a history mention, a static-versus-dynamic section,
+  and a cost comparison that were planned but not built.
 
-3. **How It Works** (15 min)
-   - Review Recipe section
-   - Explain website fundamentals
+## License
 
-4. **Platform Options** (15 min)
-   - Explore Platforms section
-   - Discuss pros/cons of each
+No `LICENSE` file is committed, so default copyright applies to the code and the workshop content,
+© NEXUS, University of St. Thomas. The material exists to be re-run and copied by students — ask at
+[nexus@stthomas.edu](mailto:nexus@stthomas.edu) and it is almost certainly a yes.
 
-5. **Demo** (30 min)
-   - Follow Demo section steps
-   - Live build with Lovable
-
-6. **Hands-On** (20 min)
-   - Participants build their own
-   - Support and troubleshooting
-
-7. **Wrap-Up** (5 min)
-   - Review Resources section
-   - Next steps and Q&A
-
-## 🔗 Important Links
-
-- **NEXUS Website**: [ustnexus.club](https://ustnexus.club)
-- **Contact**: nexus@everjust.org
-- **Lovable**: [lovable.dev](https://lovable.dev)
-- **GitHub**: [github.com](https://github.com)
-
-## 📱 Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🤝 Contributing
-
-This is an internal NEXUS event website. For suggestions or improvements, contact the NEXUS team.
-
-## 📄 License
-
-© 2024 NEXUS - University of St. Thomas. All rights reserved.
-
----
-
-**Built with ❤️ by NEXUS**  
-*Connecting Innovation, Technology, and Excellence*
+Club site: [ustnexus.club](https://ustnexus.club).
